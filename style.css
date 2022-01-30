@@ -1,0 +1,38 @@
+:root {
+    --primarycolor: #2b2b2a;
+    --secondarycolor: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #181a1b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181a1b, #28292a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #181a1b, #28292a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock{
+    color: var(--secondarycolor);
+    font-weight: 600;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: .2rem solid var(--secondarycolor);
+}
+
+
+.meridiem {
+    padding: 0 0.8rem;
+}
